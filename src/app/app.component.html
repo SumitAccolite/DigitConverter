@@ -1,0 +1,6 @@
+<div class="container">
+  <label for="numberInput">Enter a number:</label>
+  <input type="text" id="numberInput" [(ngModel)]="inputNumber" placeholder="Enter a number">
+  <button (click)="convertNumber()">Convert</button>
+  <p>{{ inputNumber | numberToWords }}</p>
+</div>
